@@ -1,0 +1,33 @@
+:root {
+  --header-font-size: 1.2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  font-size: var(--header-font-size);
+}
+
+.nav-links {
+  list-style: none;
+  display: inline;
+  font-size: var(--header-font-size);
+  padding-right: 15px;
+}
+
+img {
+  width: 40px;
+  height: auto;
+}
