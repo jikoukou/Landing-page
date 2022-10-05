@@ -11,6 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smartphone landing page</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -26,11 +33,96 @@
       </figure>
       <nav id="nav-bar">
         <ul>
-          <li class="nav-links">Features</li>
-          <li class="nav-links">How it works</li>
-          <li class="nav-links">Pricing</li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#video">Product video</a></li>
+          <li><a class="nav-link" href="#pricing">Price</a></li>
         </ul>
       </nav>
     </header>
+
+    <main id="main-doc">
+      <form
+        class="center"
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+      >
+        <h2>Enter your email address</h2>
+        <input
+          type="email"
+          class="block-el"
+          name="email"
+          id="email"
+          placeholder="example@mail.com"
+          required
+        />
+
+        <input id="submit" type="submit" value="Get Started" class="btn" />
+      </form>
+
+      <section id="features" class="top-margin">
+        <div class="center key-features">
+          <i class="fa fa-battery-full icon" aria-hidden="true"></i>
+          <h3 class="header">Long lasting battery life</h3>
+          <p class="par">
+            Our products can last up to 3 days without charging.
+          </p>
+        </div>
+
+        <br />
+        <div class="center key-features">
+          <i class="fa fa-microchip icon" aria-hidden="true"></i>
+          <h3 class="header">Processing power</h3>
+          <p class="par">
+            The original smartphone uses a state-of-the-art processors
+          </p>
+        </div>
+        <br />
+        <div class="center key-features">
+          <i class="fa fa-database icon" aria-hidden="true"></i>
+          <h3 class="header">Storage</h3>
+          <p class="par">With our device you can store up to 256GB of data</p>
+        </div>
+      </section>
+
+      <section id="use" class="center">
+        <iframe
+          class="top-margin"
+          id="video"
+          height="315"
+          src="https://www.youtube.com/watch?v=B7dlMV43Cps&t=6s"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="pricing" class="center">
+        <h2>Choose the right device for you</h2>
+        <div class="price-cards">
+          <div class="card">
+            <p>Cameras</p>
+            <p>Battery</p>
+            <p>Network</p>
+            <p>MEMORY</p>
+          </div>
+          <div class="card">
+            <h3>Basic</h3>
+            <p>2</p>
+            <p>4000 mah</p>
+            <p>4G</p>
+            <p>4GB</p>
+          </div>
+          <div class="card">
+            <h3>Pro</h3>
+            <p>3</p>
+            <p>5000 mah</p>
+            <p>5G</p>
+            <p>8GB</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="center">
+        <p>Copyright &copy; Original smartphones</p>
+      </footer>
+    </main>
   </body>
 </html>

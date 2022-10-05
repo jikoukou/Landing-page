@@ -1,26 +1,53 @@
 :root {
-  --header-font-size: 1.2rem;
+  --key-features-margin-left: 40px;
+  --header-font-size: 1.4rem;
+  --logo-font-f: Helvetica;
+  --body-font-f: Arial;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #e56717;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: var(--body-font-f);
+}
 header {
+  background-color: #eee;
+  z-index: 2;
+  top: 0;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
-#nav-bar {
+main {
+  position: relative;
+  top: 100px;
+}
+
+nav {
   display: flex;
   align-items: center;
   margin-right: 10px;
 }
 
 figure {
+  font-family: var(--logo-font-f);
   display: flex;
   align-items: center;
   font-size: var(--header-font-size);
 }
 
-.nav-links {
+nav ul > li {
   list-style: none;
   display: inline;
   font-size: var(--header-font-size);
@@ -30,4 +57,66 @@ figure {
 img {
   width: 40px;
   height: auto;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.top-margin {
+  margin-top: 60px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: orange;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.key-features {
+  display: grid;
+  grid-template-areas:
+    "icons title title title title title title title"
+    "icons par par par par par par par ";
+  width: 40vw;
+}
+
+.icon {
+  grid-area: icons;
+  text-align: center;
+  font-size: 50px;
+}
+
+.header {
+  grid-area: title;
+  margin: 0 var(--key-features-margin-left) 0 var(--key-features-margin-left);
+}
+
+.par {
+  grid-area: par;
+  margin: 0 var(--key-features-margin-left) 0 var(--key-features-margin-left);
+}
+
+a {
+  text-decoration: none;
+}
+.price-cards {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background-color: orangered;
+}
+
+@media screen and (max-width: 800px) {
+  nav ul > li {
+    display: flex;
+  }
 }
